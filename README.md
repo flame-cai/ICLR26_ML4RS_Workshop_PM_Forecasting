@@ -1,6 +1,6 @@
 # PM Forecasting with U-Net (ICLR26 ML4RS Workshop)
 
-Official implementation of a nested‑grid residual learning framework built on a lightweight U‑Net for global particulate matter (PM) forecasting using CAMS atmospheric composition data.
+Official implementation of a nested‑domain residual learning framework built on a lightweight U‑Net for global particulate matter (PM) forecasting using CAMS atmospheric composition data.
 
 ## Scope
 
@@ -11,12 +11,12 @@ Official implementation of a nested‑grid residual learning framework built on 
 
 ## Overview
 
-- Global domain decomposed into overlapping local grids.
-- U‑Net predicts residual pollutant evolution per grid.
+- Global domain decomposed into overlapping local domains.
+- U‑Net predicts residual pollutant evolution per domain.
 - Local predictions are stitched into global forecasts.
 
 ![Nested‑Grid Residual Learning Framework](assets/archview.png)
-*Figure 1. Overview of Nested-Grid Residual Learning Framework using U-Net Architecture.*
+*Figure 1. Overview of Nested-Domain Residual Learning Framework using U-Net Architecture.*
 
 ![U‑Net Architecture Overview](assets/architecture.png)
 *Figure 2. Lightweight U‑Net architecture used for residual prediction.*
